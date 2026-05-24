@@ -13,7 +13,10 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "RAVI a besoin du micro pour enregistrer des clips audio."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +24,20 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["RECORD_AUDIO"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-asset",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "RAVI a besoin du micro pour enregistrer des clips audio."
+        }
+      ]
+    ]
   }
 }
