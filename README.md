@@ -10,6 +10,19 @@ L'application communique avec un serveur Python Flask qui exécute les modèles 
 - **Enregistrement audio** — Enregistrement via le micro, lecture, sauvegarde avec nom personnalisé, suppression
 - **Transfert de timbre** — Sélection d'une source audio (son par défaut, enregistrement, fichier du téléphone), choix du modèle (Jazz, Darbouka, Parole, Chats, Chiens), envoi au serveur et écoute du résultat
 
+## Télécharger l'application (Android)
+
+Un APK prêt à installer est disponible via Expo (EAS Build), sans passer par le Play Store :
+
+**[➡️ Télécharger / installer RAVI](https://expo.dev/accounts/tharsan.vishnukumar/projects/react-native-ravi/builds/3f6fb0da-970f-436d-bae6-6537b0111c8c)**
+
+1. Ouvrez le lien ci-dessus sur votre téléphone Android (ou scannez le QR code de la page).
+2. Téléchargez l'`.apk`.
+3. Autorisez l'installation depuis des « sources inconnues » si demandé.
+4. Lancez RAVI.
+
+> iOS : non disponible en installation directe (nécessite un compte Apple Developer).
+
 ## Prérequis
 
 - [Node.js](https://nodejs.org/) (v18+)
