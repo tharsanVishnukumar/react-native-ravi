@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ravi",
-    "slug": "ravi",
+    "slug": "react-native-ravi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,8 +15,10 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "RAVI a besoin du micro pour enregistrer des clips audio."
-      }
+        "NSMicrophoneUsageDescription": "RAVI a besoin du micro pour enregistrer des clips audio.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.tharsan.vishnukumar.reactnativeravi"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,7 +27,12 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "permissions": ["RECORD_AUDIO"]
+      "permissions": [
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.tharsan.vishnukumar.reactnativeravi"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -38,6 +45,12 @@
           "microphonePermission": "RAVI a besoin du micro pour enregistrer des clips audio."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f7fc98e0-b8f7-41ab-99ff-bf0e1ad7e8da"
+      }
+    },
+    "owner": "tharsan.vishnukumar"
   }
 }
